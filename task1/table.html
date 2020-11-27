@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <script src="js/style.js"></script>
-    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/table.css" id="style">
     <title>Task1 Pimoshenko</title>
   </head>
   <body>
@@ -66,12 +66,22 @@
         <td>60cm</td>
     </tr>
 </table>
-<input type="button" value="style1" onclick="style1()">
-<input type="button" value="style2" onclick="style2()">
-<input type="button" value="style3" onclick="style3()">
-
+  <input type="button" value="Night" onclick="styleNew('css/styleDark.css')">
+  <input type="button" value="Blue" onclick="styleNew('css/styleBlue.css')">
+  <input type="button" value="Deafult" onclick="styleNew('css/table.css')">
       </div>
-    <footer class="footer">
-      <p>Date Alina Pimoshenko Version</p></footer>
+      <footer class="footer">
+        <div class="date">
+          date <span id="datetime"></span>
+        </div>
+        <div class="nameVersion">
+          Alina Pimoshenko <br> Version 1
+      </div>
+      </footer>
+    </body>
+    <script>
+      var date = new Date();
+      document.getElementById('datetime').innerHTML = date.toLocaleDateString();
+    </script>
   </body>
 </html>

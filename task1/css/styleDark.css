@@ -45,28 +45,33 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
 }
-/* анимация при наведении на пункты меню */
 li a:hover {
 	background: linear-gradient(to right, #474747,rgba(133,116,116,0));
 	color: #474747;
 }
-.catalog{
+.table_content{
   width: 75%;
   float: right;
 	height: 100%;
+  text-align: center;
+  display: inline-table;
 }
-.column {
-    text-align: center;
-		padding: 10px;
+table{
+  width: 90%;
+  margin: 90px 20px 20px 0;
+  text-align: center;
+  border: #000509;
+  background-color:#BF9890;
+  border-collapse: collapse;
 }
-.row{
-	display: flex;
-	justify-content: space-evenly;/* Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют равное пространство вокруг */
-	margin: 30px 10px 0 10px
+th, td, tr{
+  padding: 10px 10px 10px 10px;
+  width: 100px;
 }
-.img{
-	width: 300px;
-	height: 300px;
+/* шапка таблицы */
+th{
+  background: #190C09;
+  color: #CF9285;
 }
 .date{
 	float: right;

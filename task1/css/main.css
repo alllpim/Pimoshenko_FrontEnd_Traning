@@ -16,7 +16,6 @@ li{
   height: 130px;
   font-size: 60px;
   color: white;
-  /*font-family: 'Courgette', cursive;*/
   text-align: center;
 	background: rgba(133,116,116,0.6);
 	padding-top: 20px;
@@ -30,7 +29,6 @@ li{
 	float: left;
   width: 25%;
   font-size: 20px;
-  /*font-family: 'Courgette', cursive;*/
 	margin-top: 50px;
 }
 .footer{
@@ -40,6 +38,7 @@ li{
   background: #9F878B; /* Цвет фона */
   color: #FEF5EE; /* Цвет текста */
   width: 100%;
+	text-align: center;
 }
 li a {
   display: block;
@@ -47,6 +46,7 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
 }
+/* анимация при наведении на пункты меню */
 li a:hover {
 	background: linear-gradient(to right, #474747,rgba(133,116,116,0));
 	color: #474747;
@@ -59,4 +59,13 @@ li a:hover {
 	background-color: rgba(0,0,0,0.6);
 	width: 70%;
 	float: left;
+}
+.date{
+	float: right;
+	padding: 0 50px 0 0;
+}
+.nameVersion{
+	float: left;
+	text-align: center;
+	padding: 0 0 0 50px;
 }

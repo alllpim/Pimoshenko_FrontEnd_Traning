@@ -62,26 +62,22 @@ table{
   text-align: center;
   border: black;
   border-collapse: collapse;
+	background-color: white;
 }
 th, td, tr{
   padding: 10px 10px 10px 10px;
   width: 100px;
 }
+/* шапка таблицы */
 th{
   background: linear-gradient(to bottom, #474747,rgba(133,116,116,0));
 }
-
-.table2{
-	width: 90%;
-  margin: 90px 20px 20px 0;
-  text-align: center;
-  border-collapse: collapse;
-	background-color: yellow;
+.date{
+	float: right;
+	padding: 0 50px 0 0;
 }
-.table3{
-	width: 75%;
-  float: right;
-	height: 100%;
-  text-align: center;
-  display: inline-table;
+.nameVersion{
+	float: left;
+	text-align: center;
+	padding: 0 0 0 50px;
 }

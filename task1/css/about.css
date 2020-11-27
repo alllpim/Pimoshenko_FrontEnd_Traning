@@ -73,3 +73,12 @@ a:hover {
 	background: linear-gradient(to bottom, #474747,rgba(133,116,116,0));
 	color: white;
 }
+.date{
+	float: right;
+	padding: 0 50px 0 0;
+}
+.nameVersion{
+	float: left;
+	text-align: center;
+	padding: 0 0 0 50px;
+}

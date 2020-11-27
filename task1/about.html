@@ -31,10 +31,20 @@
   </div>
   <div class="content">
     <p>The site was created by Alina Pimoshenko, student of the Gomel State Technical University</p>
-    <a href="mailto:'pimoshenko63@gmail.com'">Here you can send your message for author</a>
+     <a href="http://t.me/alllpim">Here you can send your message for author</a> <!--переадресация на почту -->
   </div>
-  <footer class="footer" id="footer" onload="DateTime()">
-    <p>Date Alina Pimoshenko Version</p>
+  <footer class="footer">
+    <div class="date">
+      date <span id="datetime"></span>
+    </div>
+    <div class="nameVersion">
+      Alina Pimoshenko <br> Version 1
+  </div>
   </footer>
+</body>
+<script>
+  var date = new Date();
+  document.getElementById('datetime').innerHTML = date.toLocaleDateString();
+</script>
 </body>
 </html>
