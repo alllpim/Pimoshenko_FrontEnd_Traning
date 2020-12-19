@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="js/style.js"></script>
+    <link rel="stylesheet" href="css/table.css" id="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="http://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Task3 Pimoshenko</title>
+  </head>
+  <body>
+    <div class="grid-container">
+    <div class="header">
+      <img src="images/head1.png" alt="head" width="80px" height="80px">
+      Flowers For You
+      <img src="images/head2.png" alt="head" width="80px" height="80px">
+    </div>
+    <div class="navbar">
+      <nav type="list" label="Menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="table.html">Price(Table)</a></li>
+        <li><a href="about.html">About</a></li>
+      </nav>
+    </div>
+    <div class="news">
+      <h1>News</h1>
+      <article class="news">
+          <h2>New1</h2>
+          <time class="datetime" datetime="2020-12-19">December 19, 2020</time>
+          <section class="excert">
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </section>
+          <h2>New2</h2>
+          <time class="datetime" datetime="2020-12-16">December 16, 2020</time>
+          <section class="excert">
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </section>
+    </div>
+    <div class="content">
+      <table border="2px">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Size</th>
+    </tr>
+    <tr>
+        <td>Bouquet №1</td>
+        <td>20$</td>
+        <td>50cm</td>
+    </tr>
+    <tr>
+        <td>Bouquet №2</td>
+        <td>35$</td>
+        <td>55cm</td>
+    </tr>
+    <tr>
+        <td>Bouquet №3</td>
+        <td>30$</td>
+        <td>50cm</td>
+    </tr>
+    <tr>
+        <td>Bouquet №4</td>
+        <td>20$</td>
+        <td>60cm</td>
+    </tr>
+    <tr>
+        <td>Bouquet №5</td>
+        <td>40$</td>
+        <td>70cm</td>
+    </tr>
+    <tr>
+        <td>Bouquet №6</td>
+        <td>30$</td>
+        <td>60cm</td>
+    </tr>
+</table>
+  <input type="button" class="botton" value="Night" onclick="styleNew('css/styleDark.css')">
+  <input type="button" class="botton" value="Red" onclick="styleNew('css/styleBlue.css')">
+  <input type="button" class="botton" value="Deafult" onclick="styleNew('css/table.css')">
+      </div>
+    <div class="footer">
+      <div class="date">
+        <article>date</article> <span id="datetime"></span>
+      </div>
+      <div class="nameVersion">
+        Alina Pimoshenko <br> Version 1
+      </div>
+    </div>
+    </div>
+  </body>
+  <script>
+    var date = new Date();
+    document.getElementById('datetime').innerHTML = date.toLocaleDateString();
+  </script>
+</html>
