@@ -7,7 +7,7 @@ body{
   background-color:#FEF5EE;
 }
 li{
-  list-style-type: none; /*Удаление маркеров в меню*/
+  list-style-type: none; /*Dekete markers*/
   line-height: 3;
 }
 .header{
@@ -32,11 +32,11 @@ li{
   height: 100%;
 }
 .footer{
-  position: fixed; /* Фиксированное положение */
-  left: 0; bottom: 0; /* Левый нижний угол */
-  padding: 10px; /* Поля вокруг текста */
-  background: #9F878B; /* Цвет фона */
-  color: #FEF5EE; /* Цвет текста */
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 10px;
+  background: #9F878B;
+  color: #FEF5EE;
   width: 100%;
 }
 li a {
@@ -68,7 +68,7 @@ th, td, tr{
   padding: 10px 10px 10px 10px;
   width: 100px;
 }
-/* шапка таблицы */
+/* Table head */
 th{
   background: linear-gradient(to bottom, #474747,rgba(133,116,116,0));
 }

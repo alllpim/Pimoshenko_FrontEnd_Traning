@@ -9,7 +9,7 @@ body{
 	background-image: url("../images/mainFlower.jpg");
 }
 li{
-  list-style-type: none; /*Удаление маркеров в меню*/
+  list-style-type: none; /*Delete markers*/
   line-height: 3;
 }
 .header{
@@ -34,11 +34,11 @@ li{
 	margin-top: 50px;
 }
 .footer{
-  position: fixed; /* Фиксированное положение */
-  left: 0; bottom: 0; /* Левый нижний угол */
-  padding: 10px; /* Поля вокруг текста */
-  background: #9F878B; /* Цвет фона */
-  color: #FEF5EE; /* Цвет текста */
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 10px;
+  background: #9F878B;
+  color: #FEF5EE; /* Text color */
   width: 100%;
 }
 li a {
