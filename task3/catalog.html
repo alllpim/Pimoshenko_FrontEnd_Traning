@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="http://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Tas3 Pimoshenko</title>
+  </head>
+  <body>
+    <div class="grid-container">
+    <div class="header">
+      <img src="images/head1.png" alt="head" width="80px" height="80px">
+      Flowers For You
+      <img src="images/head2.png" alt="head" width="80px" height="80px">
+    </div>
+    <div class="navbar">
+      <nav type="list" label="Menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="table.html">Price(Table)</a></li>
+        <li><a href="about.html">About</a></li>
+      </nav>
+    </div>
+    <div class="news">
+      <h1>News</h1>
+      <article class="news">
+          <h2>New1</h2>
+          <time class="datetime" datetime="2020-12-19">December 19, 2020</time>
+          <section class="excert">
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </section>
+          <h2>New2</h2>
+          <time class="datetime" datetime="2020-12-16">December 16, 2020</time>
+          <section class="excert">
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </section>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="column">
+          <img src="images/img1.jpg" alt="img1" class="img">
+          <p>Bouquet №1</p>
+        </div>
+        <div class="column">
+          <img src="images/img2.jpg" alt="img2"class="img">
+          <p>Bouquet №2</p></div>
+        <div class="column">
+          <img src="images/img3.jpg" alt="img3"class="img">
+          <p>Bouquet №3</p></div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/img4.jpg" alt="img4"class="img">
+          <p>Bouquet №4</p></div>
+        <div class="column">
+          <img src="images/img5.jpg" alt="img5"class="img">
+          <p>Bouquet №5</p></div>
+        <div class="column">
+          <img src="images/img6.jpg" alt="img6"class="img">
+          <p>Bouquet №6</p></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="date">
+        <article>date</article> <span id="datetime"></span>
+      </div>
+      <div class="nameVersion">
+        Alina Pimoshenko <br> Version 1
+      </div>
+    </div>
+    </div>
+  </body>
+  <script>
+    var date = new Date();
+    document.getElementById('datetime').innerHTML = date.toLocaleDateString();
+  </script>
+</html>

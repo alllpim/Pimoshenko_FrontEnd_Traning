@@ -1,0 +1,71 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+  background-color:#FEF5EE;
+  background-size: 100%;
+	background-image: url("../images/mainFlower.jpg");
+}
+li{
+  list-style-type: none; /*Удаление маркеров в меню*/
+  line-height: 3;
+}
+.header{
+  height: 130px;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+	background: rgba(133,116,116,0.6);
+	padding-top: 20px;
+}
+.main{
+	width: 100%;
+	height: 100%;
+}
+.menu{
+  text-align: center;
+	float: left;
+  width: 25%;
+  font-size: 20px;
+	margin-top: 50px;
+}
+.footer{
+  position: fixed; /* Фиксированное положение */
+  left: 0; bottom: 0; /* Левый нижний угол */
+  padding: 10px; /* Поля вокруг текста */
+  background: #9F878B; /* Цвет фона */
+  color: #FEF5EE; /* Цвет текста */
+  width: 100%;
+	text-align: center;
+}
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+/* анимация при наведении на пункты меню */
+li a:hover {
+	background: linear-gradient(to right, #474747,rgba(133,116,116,0));
+	color: #474747;
+}
+.content{
+	color: white;
+	padding: 25px 25px 25px 25px;
+	margin-top: 15%;
+	text-align: justify;
+	background-color: rgba(0,0,0,0.6);
+	width: 70%;
+	float: left;
+}
+.date{
+	float: right;
+	padding: 0 50px 0 0;
+}
+.nameVersion{
+	float: left;
+	text-align: center;
+	padding: 0 0 0 50px;
+}
