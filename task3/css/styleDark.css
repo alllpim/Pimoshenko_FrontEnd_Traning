@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-size: 100%;
+	background-image: url("../images/mainFlower.jpg");
+  font-family: 'Poiret One', cursive;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-auto-rows: minmax(100px, auto);
+  min-height: 100vh;
+  grid-template-rows: auto auto 1fr auto;
+}
+.header{
+  grid-column: 1/4;
+  grid-row: 1/2;
+  align-self: flex-start;
+  color: white;
+  text-align: center;
+	background: rgba(133,116,116,0.6);
+	padding-top: 20px;
+  position: sticky;
+  top: 0;
+  font-size: 60px;
+  padding: 0 0 10px 0;
+  font-family: 'Parisienne', cursive;
+
+}
+.navbar{
+  grid-column: 1/4;
+  grid-row: 2/3;
+  text-align: center;
+  justify-self: center;
+  position: sticky;
+  margin-top: 15px;
+  font-size: 20px;
+  top: 100px;
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#474747; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:10px; /*добавляем отступ*/
+  margin: 10px;
+  font-family: ; /*меняем шрифт*/
+  border-radius:4px; /*добавляем скругление*/
+}
+a:hover {
+  background:rgba(133,116,116,0.6);/*добавляем эффект при наведении*/
+}
+li {
+  list-style-type: none; /*Удаление маркеров в меню*/
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  margin-right:5px; /*Добавляем отступ у пунктов меню*/
+  display: inline-block;
+}
+.news{
+  background: linear-gradient(to right, rgba(71,71,71,0.8), rgba(133,116,116,0.0));
+  grid-column: 1/2;
+  grid-row: 2/4;
+  float: left;
+  color: white;
+}
+.content{
+  grid-column: 2/4;
+  grid-row: 3/4;
+  color: black;
+	text-align: center;
+  justify-self: center;
+  margin: 100px;
+}
+.footer{
+  grid-column: 1/4;
+  align-self: flex-end;
+  background: #9F878B; /* Цвет фона */
+  color: #FEF5EE; /* Цвет текста */
+  left: 0;
+  bottom: 0;
+  padding-bottom: 15px;
+}
+.date{
+	float: right;
+	padding: 30px 50px 0 0;
+}
+.nameVersion{
+	float: left;
+	text-align: center;
+	padding: 30px 0 0 50px;
+}
+table{
+  text-align: center;
+  background-color: #FCE8E8;
+	color: white;
+  border: black;
+  border-collapse: collapse;
+	background-color: rgb(52,34,87);
+}
+th, td, tr{
+  padding: 10px 10px 10px 10px;
+  width: 100px;
+}
+/* шапка таблицы */
+th{
+  background: linear-gradient(to bottom, #474747,rgba(133,116,116,0));
+}
+.botton{
+  padding: 5px;
+  background:#474747; /*добавляем фон к пункту меню*/
+  border-radius:4px; /*добавляем скругление*/
+  color:#fff; /*меняем цвет ссылок*/
+  float:left;
+}
+.excert{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.datetime{
+  font-size: 20px;
+}
