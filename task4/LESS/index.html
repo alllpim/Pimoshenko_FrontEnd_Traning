@@ -1,0 +1,52 @@
+<!-- Main page -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="less/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="http://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <title>Task4 Pimoshenko</title>
+</head>
+<body>
+  <header class="header">
+    <img src="images/head1.png" alt="head" width="80px" height="80px">
+    Flowers For You
+    <img src="images/head2.png" alt="head" width="80px" height="80px">
+  </header>
+    <div class="menu">
+    <menu type="list" label="Menu">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="catalog.html">Catalog</a>
+      </li>
+      <li>
+        <a href="table.html">Price(Table)</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+    </menu>
+  </div>
+  <div class="content">
+      <p><b>This site is intended</b> for customers who want to familiarize themselves with the assortment of the store.<br></p>
+      <p><br>You can familiarize yourself with the assortment by going to the <ins>"Catalog"</ins> tab.</p>
+      <p><br>You can get acquainted with the prices by going to the <ins>"Prices (Table)"</ins> tab. </p>
+  </div>
+  <footer class="footer">
+    <div class="date">
+      date <span id="datetime"></span>
+    </div>
+    <div class="nameVersion">
+      Alina Pimoshenko <br> Version 1
+  </div>
+  </footer>
+</body>
+<script>
+  var date = new Date();
+  document.getElementById('datetime').innerHTML = date.toLocaleDateString();
+</script>
+</html>

@@ -1,0 +1,95 @@
+//out: ../css/catalog.css
+@header-font-size:60px;
+@content-font-size:30px;
+@menu-font-size: 20px;
+@menu-width:25%;
+@content-width:70%;
+@header-font: 'Parisienne', cursive;;
+@content-font: 'Poiret One', cursive;
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.deafult{
+  text-align: center;
+  height: 100%;
+}
+body{
+  background-size: 100%;
+  background-image: url("../images/mainFlower.jpg");
+}
+.header {
+  .deafult;
+  font-size: @header-font-size;
+  height: 17%;
+  background: rgba(133,116,116,0.6);
+  font-family: @header-font;
+}
+.menu{
+  .deafult;
+  width: @menu-width;
+  font-size: @menu-font-size;
+  float: left;
+  font-family: @content-font;
+  margin-left: 0;
+  margin-top: 100px;
+}
+li {
+	list-style-type: none;
+	line-height: 3;
+}
+li a {
+	display: block;
+	color: white;
+	padding: 8px 16px;
+	&:hover {
+		background: linear-gradient(to top, #474747,rgba(133,116,116,0));
+		color: #474747;
+	}
+}
+.catalog{
+  @content-backgroung-color: #FEF5EE;
+  .deafult;
+  width: 60%;
+  font-size: @content-font-size;
+  float: right;
+  font-family: @content-font;
+  background-color: @content-backgroung-color;
+  color: black;
+	margin: 5% 5% 5% 0;
+}
+.footer{
+  @footer-background-color:#9F878B;
+  @footer-text-color:#FEF5EE;
+  font-family: @content-font;
+  background: @footer-background-color;
+  color: @footer-text-color;
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 10px;
+  width: 100%;
+}
+.date{
+	float: right;
+	padding: 30px 50px 0 0;
+}
+.nameVersion{
+	float: left;
+	text-align: center;
+	padding: 30px 0 0 50px;
+}
+.column {
+    text-align: center;
+		padding: 10px;
+}
+.row{
+	display: flex;
+	justify-content: space-evenly;/* Равномерно распределяет все элементы по ширине flex-блока. Все элементы имеют равное пространство вокруг */
+	margin: 30px 10px 0 10px
+}
+.img{
+  max-width: 100%;
+	width: 300px;
+	height: 300px;
+}

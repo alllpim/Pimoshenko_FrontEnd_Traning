@@ -1,0 +1,92 @@
+//out: ../css/table.css
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap')
+
+$header-font-size: 60px
+$content-font-size: 30px
+$menu-font-size: 20px
+$menu-width: 25%
+$content-width: 70%
+$header-font: 'Parisienne'
+$content-font: 'Poiret One'
+
+
+@mixin deafult
+  text-align: center
+  height: 100%
+
+body
+  background-size: 100%
+  background-image: url("../images/mainFlower.jpg")
+
+.header
+  @include deafult
+  font-size: $header-font-size
+  height: 20%
+  background: rgba(133,116,116,0.6)
+  font-family: $header-font
+
+.menu
+  @include deafult
+  width: $menu-width
+  font-size: $menu-font-size
+  float: left
+  font-family: $content-font
+  margin-left: 0
+  margin-top: 100px
+
+li
+	list-style-type: none
+	line-height: 3
+
+li a
+	display: block
+	color: white
+	padding: 8px 16px
+	&:hover
+		background: linear-gradient(to top, #474747,rgba(133,116,116,0))
+		color: #474747
+
+.table_content
+  @include deafult
+  width: 60%
+  float: right
+  font-size: $content-font-size
+  text-align: center
+  font-family: $content-font
+  color: white
+  margin: 100px 100px 0 0
+
+.footer
+  $footer-background-color: #9F878B
+  $footer-text-color: #FEF5EE
+  font-family: $content-font
+  background: $footer-background-color
+  color: $footer-text-color
+  position: fixed
+  left: 0; bottom: 0
+  padding: 10px
+  width: 100%
+
+.date
+	float: right
+	padding: 30px 50px 0 0
+
+.nameVersion
+	float: left
+	text-align: center
+	padding: 30px 0 0 50px
+
+table
+	background-color: #FCE8E8
+  text-align: center
+  border: black
+  border-collapse: collapse
+
+th, td, tr
+  padding: 10px 10px 10px 10px
+  width: 300px
+
+th
+  background: linear-gradient(to bottom, #474747,rgba(133,116,116,0))
