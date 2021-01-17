@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Task 5</title>
+  <script src="js/calc.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="input">
+      <form name="form"><input class="input" type="text" name="result" readonly></form>
+    </div>
+    <div class="item clean" onclick="clean()">C</div>
+    <div class="item back" onclick="back()">backspace</div>
+    <div class="item operation" onclick="insert('+')">+</div>
+    <div class="item operation" onclick="insert('-')">-</div>
+    <div class="item operation" onclick="insert('*')">&times</div>
+    <div class="item operation" onclick="insert('/')">&divide</div>
+    <div class="item" onclick="insert('1')">1</div>
+    <div class="item" onclick="insert('2')">2</div>
+    <div class="item" onclick="insert('3')">3</div>
+    <div class="item" onclick="insert('4')">4</div>
+    <div class="item" onclick="insert('5')">5</div>
+    <div class="item" onclick="insert('6')">6</div>
+    <div class="item" onclick="insert('7')">7</div>
+    <div class="item" onclick="insert('8')">8</div>
+    <div class="item" onclick="insert('9')">9</div>
+    <div class="item zero" onclick="insert('0')">0</div>
+    <div class="item dot" id="dot" onclick="insert('.')">.</div>
+    <div class="item equal" onclick="equal()">=</div>
+    <div class="item radio">
+      <input class="radio" type="radio" name="num" value="int" id="int" onclick="int()"> <caption>Integer</caption>
+      <input class="radio" type="radio" name="num" value="full" onclick="full()" checked><caption>Full</caption>
+    </div>
+    <div class="item check">
+      <input class="checkbox" type="checkbox" name="check" value="priopity" onclick="" checked>Priopity
+    </div>
+    </div>
+    <div class="button_div">
+      <button type="submit" onclick="showDiv()" class="button">History</button>
+    </div>
+    <div class="history" id="history">
+    </div>
+</body>
+
+</html>
